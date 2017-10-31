@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Chinese Restaurant Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list *ngFor="let list of items">
+    <ion-list-header> {{list.Header}}</ion-list-header>
+    <ion-item *ngFor="let item of list.FoodItems">
+      {{item.MenuItem}}
+    </ion-item>
+  </ion-list>
+</ion-content>
